@@ -294,10 +294,10 @@ internals.renderer = new THREE.WebGLRenderer({
 });
 internals.camera = new THREE.PerspectiveCamera(45, internals.W / internals.H, 1, 1000);
 internals.scene = new THREE.Scene();
-internals.scene.fog = new THREE.Fog(0xd5f8f8, 100, 300); // setup renderer
+//internals.scene.fog = new THREE.Fog(0xd5f8f8, 100, 300); // setup renderer
 
 internals.renderer.setPixelRatio(window.devicePixelRatio);
-internals.renderer.setClearColor(0xc5f5f5, .7);
+internals.renderer.setClearColor("rgba(0,0,0,0.01)", .02);//(0xc5f5f5, .7); // blue upper sky
 internals.renderer.setSize(internals.W, internals.H);
 internals.renderer.shadowMap.enabled = true;
 //document.body.appendChild(internals.renderer.domElement); // setup camera
@@ -320,7 +320,7 @@ internals.controls.maxDistance = 250;
 
 (function createFloor() {
   const floor = new THREE.Mesh(new THREE.PlaneBufferGeometry(1000, 1000), new THREE.MeshBasicMaterial({
-    color: 0xe0dacd
+    color: 0xffffff //0xe0dacd // floor color
   }));
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -100;
@@ -352,9 +352,9 @@ internals.controls.maxDistance = 250;
 
 internals.resizeHandler = () => {
   internals.W = window.innerWidth;
-  internals.H = window.innerHeight;
-  internals.renderer.setSize(internals.W, internals.H);
-  internals.camera.aspect = internals.W / internals.H;
+  internals.H = 400//window.innerHeight;
+  internals.renderer.setSize(internals.W, 400)//internals.H);
+  internals.camera.aspect = internals.W / 400;//internals.H;
   internals.camera.updateProjectionMatrix();
 };
 
