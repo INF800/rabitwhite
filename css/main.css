@@ -42,22 +42,6 @@ footer {
     margin:10px;
     min-height:170px;
   }
-  
-  @media screen and (max-width: 400px) {
-     #left-box { 
-      float: none;
-      margin-right:0;
-      width:auto;
-      border:0;
-      border-bottom:2px solid #000;    
-    }
-    section {
-        height: 200vh;
-    }
-    .two-box-wrapper {
-        height: 50%;
-    }
-  }
 
 
 
@@ -69,10 +53,58 @@ footer {
     border: 1px solid black;
     background-color: white !important;
     text-align: center;
-}
-.intro-head {
-    padding-left: 30px !important;
-    width: 60%;
     text-align: left;
-    font-size: 30px; /*xx-large;*/
+
+}
+.intro-head h1 {
+  padding-left: 120px !important;
+  width: 70%;
+  font-size: 60px; /*xx-large;*/
+  height: fit-content;
+}
+.intro-desc {
+  padding-left: 120px !important;
+  width: 60%;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.get-started-button {
+  padding: 10px;
+  font-size: large;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  #left-box { 
+  float: none;
+  margin-right:0;
+  width:auto;
+  border:0;
+  border-bottom:2px solid #000;    
+  }
+  section {
+      height: 200vh;
+  }
+  .two-box-wrapper {
+      height: fit-content;
+  }
+  .intro-head h1 {
+    font-size: 50px;
+    padding-left: 30px !important;
+  }
+  .intro-desc {
+    padding-left: 30px !important;
+    width: 80%;
+  }
 }
