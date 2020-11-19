@@ -93,7 +93,7 @@ footer {
   justify-content: center;
 }
 .client {
-  height: 50px;
+  height: 44px;
   width: 160px;
   background-color: rosybrown;
   border-color: 1px solid red;
@@ -111,7 +111,7 @@ footer {
     border-bottom:2px solid #000;    
   }
   section {
-      height: 200vh;
+      height: fit-content;
   }
   .two-box-wrapper {
       height: fit-content;
