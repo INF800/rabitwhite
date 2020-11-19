@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+::selection {
+  color: white;
+  background: #4353ff;
+}
+.transparent-bg{
+  background-color: transparent !important;
+}
+.no-border {
+  border: none !important;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -42,14 +55,18 @@ footer {
     min-height:170px;
   }
 
+/* --------------------------------------
+   -------------------------------------- */
 
 
-
+.hero-sec{
+  background-color: white !important;
+}
 .hero {
     border: 0px solid transparent;
 } 
 .intro {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background-color: white !important;
     text-align: center;
     text-align: left;
@@ -58,26 +75,35 @@ footer {
   padding-left: 120px !important;
   margin-bottom: 10px !important;
   width: 70%;
-  font-size: 60px; /*xx-large;*/
+  font-size: 340%; /*xx-large;*/
   height: fit-content;
 }
 .intro-desc {
   padding-left: 120px !important;
   width: 60%;
-  font-weight: bold;
+  font-weight: 500;
   opacity: 0.9;
+  height: fit-content;
 }
 .get-started-button {
-  padding: 10px;
+  padding: 14px;
   font-size: large;
   margin-top: 15px;
+  width: 40%;
   background-color: white;
-  border: 1px solid black;
+  color: white;
+  background: #4353ff;
+  border: none;
+  outline:none;
+}
+.intro-img-bg{
+  background-color: white !;
 }
 .intro-img{
   width: 100%;
   height: 70%;
   border: 1px solid lightgray;
+  border: none;
 }
 
 
@@ -85,7 +111,8 @@ footer {
 .clients-conatiner{
   position: absolute;
   top: 80vh;
-  border: 1px solid rebeccapurple;
+  /*border: 1px solid rebeccapurple;*/
+  background-color: white;
   width: 100vw;
   height: 20vh;
   display: flex;
@@ -95,27 +122,77 @@ footer {
   height: 44px;
   width: 160px;
   background-color: rosybrown;
-  border-color: 1px solid red;
   margin: 30px;
   margin-top: 50px;
 }
 
+
+
+.product-sec {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  height: 90vh;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(135deg,#f8dbd7,#fff2e1) !important;
+}
 .per30 {
-  width: 30% !important;
+  width: 33% !important;
+  border-right: 1px solid black;
+}
+.product-sec h1 {
+  font-size: 340%; /*xx-large;*/
+  font-weight: bold;
+  margin: 0;
+  padding-left: 2.5%;
+}
+.product-sec .desc {
+  font-weight: 500;
+  height: fit-content;
+}
+.comment-box {
+  background-color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content !important;
+  margin-top: 13%;
+}
+.comment-head{
+  font-size: large;
+  font-weight: bold;
+  opacity: 0.7;
+  height: fit-content !important;
+}
+.comment{
+  height: fit-content !important;
+}
+.author{
+  display: flex;
+}
+.author-dp{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+.comment-author{
+  font-size: small;
+  font-weight: bold;
 }
 
 
 
 
 
-
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {*/
+@media screen and (max-width: 850px) {
   #left-box { 
     float: none;
     margin-right: 0;
     width: auto;
-    border: 0;
-    border-bottom:2px solid #000;    
+    border: 0;    
   }
   section {
       height: fit-content;
@@ -125,10 +202,34 @@ footer {
   }
   .intro-head h1 {
     font-size: 50px;
-    padding-left: 30px !important;
+    padding-left: 25px !important;
   }
   .intro-desc {
-    padding-left: 30px !important;
+    padding-left: 25px !important;
     width: 80%;
+  }
+  .get-started-button {
+    width: 60%;
+  }
+  .clients-conatiner{
+    position: static;
+    overflow-x: scroll;
+    display: block;
+    height: 50vh;
+  }
+  .client{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-sec {
+    height: 100vh;
+    width: 100vw;
+  }
+  .per30{
+    width: 100% !important;
+  }
+  .prod-left {
+    padding: 0px !important;
   }
 }
