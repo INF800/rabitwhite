@@ -16,7 +16,6 @@ footer {
 }
 
 
-
 /* 
   two box container:
   width of right box is flexible wrt left box
@@ -101,13 +100,21 @@ footer {
   margin-top: 50px;
 }
 
+.per30 {
+  width: 30% !important;
+}
+
+
+
+
+
 
 @media screen and (max-width: 500px) {
   #left-box { 
     float: none;
-    margin-right:0;
-    width:auto;
-    border:0;
+    margin-right: 0;
+    width: auto;
+    border: 0;
     border-bottom:2px solid #000;    
   }
   section {
