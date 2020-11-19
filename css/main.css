@@ -54,10 +54,10 @@ footer {
     background-color: white !important;
     text-align: center;
     text-align: left;
-
 }
 .intro-head h1 {
   padding-left: 120px !important;
+  margin-bottom: 10px !important;
   width: 70%;
   font-size: 60px; /*xx-large;*/
   height: fit-content;
@@ -75,23 +75,40 @@ footer {
   background-color: white;
   border: 1px solid black;
 }
+.intro-img{
+  width: 100%;
+  height: 70%;
+  border: 1px solid lightgray;
+}
 
 
 
-
-
-
-
-
+.clients-conatiner{
+  position: absolute;
+  top: 80vh;
+  border: 1px solid rebeccapurple;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.client {
+  height: 50px;
+  width: 160px;
+  background-color: rosybrown;
+  border-color: 1px solid red;
+  margin: 30px;
+  margin-top: 50px;
+}
 
 
 @media screen and (max-width: 500px) {
   #left-box { 
-  float: none;
-  margin-right:0;
-  width:auto;
-  border:0;
-  border-bottom:2px solid #000;    
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
   }
   section {
       height: 200vh;
