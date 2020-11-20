@@ -277,6 +277,7 @@ footer {
   .intro-img {
     border: 1px solid rgba(0,0,0,0.8);
     border-radius: 5px;
+    max-height: 50vh !important;
   }
   .get-started-button {
     width: 60%;
