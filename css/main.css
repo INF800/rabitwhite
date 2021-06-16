@@ -51,13 +51,6 @@ section{
   background-color: rgba(180, 113, 168, 0.384)
 }
 
-footer {
-    color: white;
-    background-color: black;
-    height: 80vh;
-}
-
-
 /* 
   two box container:
   width of right box is flexible wrt left box
